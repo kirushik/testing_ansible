@@ -1,4 +1,8 @@
 ---
 - apt_repository: repo='ppa:brightbox/ruby-ng' state=present
-- apt: name=ruby2.2 state=present update_cache=yes
+  register: ruby_ng_repo
+- apt: update_cache=yes
+  when: ruby_ng_repo.changed
+
+- apt: name=ruby2.2 state=present
 - apt: name=bundler state=present
