@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe 'critical_chain app' do
   let(:deploy_path) { '/var/www/critical_chain' }
-  let(:github_repo_path) { 'git@github.com:kirushik/critical_chain.git' }
+  let(:github_repo_path) { 'https://github.com/kirushik/critical_chain.git' }
   let(:app_user) { 'critical_chain' }
 
   it "should checkout a github repo" do

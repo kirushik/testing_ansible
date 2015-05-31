@@ -1,3 +1,6 @@
 ---
 - user: name=critical_chain state=present shell=/dev/null createhome=no system=yes
-- file: path=/var/www/critical_chain state=directory owner=critical_chain
+
+- apt: name=git state=present
+- git: repo=https://github.com/kirushik/critical_chain.git dest=/var/www/critical_chain
+- file: path=/var/www/critical_chain state=directory owner=critical_chain recurse=yes
