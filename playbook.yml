@@ -1,7 +1,8 @@
 ---
-- name: basic
-  hosts: 
+- name: default
+  hosts:
   - default
   sudo: true
   roles:
   - nginx
+  - critical_chain
