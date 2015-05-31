@@ -52,5 +52,10 @@ namespace :serverspec do
       end
     end
   end
+
+  desc 'Run all serverspecs'
+  task :all => properties.map{ |p| p['name'].to_sym }
 end
+
+task :default => 'serverspec:all'
 
