@@ -1,2 +1,3 @@
 ---
-- debug: msg="It works!"
+- user: name=critical_chain state=present shell=/dev/null createhome=no system=yes
+- file: path=/var/www/critical_chain state=directory owner=critical_chain
