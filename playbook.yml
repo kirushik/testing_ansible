@@ -1,6 +1,6 @@
 ---
 - name: basic
-  hosts: local
-  connection: local
+  hosts: 
+  - default
   roles:
   - nginx

@@ -1,4 +1,4 @@
 --- 
 - 
   playbook: playbook.yml
-  inventory: inventory
+  inventory: .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory
