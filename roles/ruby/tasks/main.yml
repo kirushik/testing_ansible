@@ -1,0 +1,3 @@
+---
+- apt_repository: repo='ppa:brightbox/ruby-ng' state=present
+- apt: name=ruby2.2 state=present update_cache=yes

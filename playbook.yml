@@ -5,4 +5,5 @@
   sudo: true
   roles:
   - nginx
+  - ruby
   - critical_chain
